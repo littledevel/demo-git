@@ -1,0 +1,20 @@
+name: Python app
+on:
+  push:
+    branches: ["main"]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo
+        run: |
+          echo "Hello"
+  build2:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo
+        run: |
+          echo "Hello 1"
+      - name: Echo2
+        run: |
+          echo "Hello 2"         
