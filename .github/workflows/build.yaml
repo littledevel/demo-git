@@ -1,0 +1,9 @@
+name: Python app
+on:
+  push:
+    branches: ["main"]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: actions/checkout@v4
