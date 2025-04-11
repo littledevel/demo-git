@@ -1,0 +1,15 @@
+name: Python app
+on:
+  push:
+    branches: ["mybranch"]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say hello
+        run: echo "Hello"
+      - uses: actions/checkout@v4
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.13' 
