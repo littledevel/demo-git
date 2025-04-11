@@ -2,7 +2,6 @@ on:
   - push
 jobs:
   build:
-    runs-on: ubuntu
     steps:
       - name: Echo
         run: |
