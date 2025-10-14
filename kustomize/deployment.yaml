@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: demo-git
+  name: demo-git
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: demo-git
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        app: demo-git
+    spec:
+      containers:
+      - image: brokenleg/demo-git
+        name: demo-git
+        resources: {}
+status: {}
