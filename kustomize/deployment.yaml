@@ -16,7 +16,5 @@ spec:
         app: demo-git
     spec:
       containers:
-      - image: brokenleg/demo-git
+      - image: brokenleg/demo-git:1.0
         name: demo-git
-        resources: {}
-status: {}
